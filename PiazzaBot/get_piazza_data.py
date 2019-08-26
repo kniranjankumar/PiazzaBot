@@ -12,7 +12,6 @@ class PiazzaWrapper:
         # course_id = input("Enter your Course ID : ")
         self.p.user_login(email_id, password)
         user_profile = self.p.get_user_profile()
-        # self.comp_photo19 = self.p.network('jqi667i5b4x5c3')
         self.comp_photo19 = self.p.network(course_id)
 
     def count_posts(self, posts,today):
