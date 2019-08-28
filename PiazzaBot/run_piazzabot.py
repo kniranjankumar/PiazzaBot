@@ -12,8 +12,8 @@ import random
 
 # instantiate Slack client
 slack_client = SlackClient(os.environ.get('SLACK_BOT_TOKEN'))
-calendar_id = SlackClient(os.environ.get('CALENDAR_ID'))
-course_id = SlackClient(os.environ.get('COURSE_ID'))
+calendar_id = os.environ.get('CALENDAR_ID')
+course_id = os.environ.get('COURSE_ID')
 TA_LIST = ['Einstein', 'Feynman', 'Sagan']
 HAPPY_MSGS = ['Yay!','Hurray!!','Good Job!']
 # starterbot's user ID in Slack: value is assigned after the bot starts up
